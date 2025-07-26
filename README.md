@@ -1,6 +1,11 @@
 # C-Keylogger
 A keylogger made using C++ of windows.
 
+For now, it is more of a proof of concept, but it works.
+
+The program output will be captured only if you mkdir in "../output/Keys.txt"
+or you can change the code yourself.
+
 # Features (for now):
 - Logs keystrokes to keys.txt
 - Uses windows API LowLevelKeyboardProc to capture keystrokes
