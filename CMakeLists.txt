@@ -8,4 +8,3 @@ add_executable(Keylogger
         vkCodes.cpp
         vkcodes.h
 )
-

